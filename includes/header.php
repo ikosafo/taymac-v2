@@ -161,7 +161,7 @@ include ('./config.php');
                     </ul>
                 </div>
                 <div class="d-flex gap-1 ms-lg-5">
-                    <a href="/admin/" class="btn btn-primary btn-login hstack gap-2">
+                    <a href="/admin/" target="_blank" class="btn btn-primary btn-login hstack gap-2">
                         <i class="fa-solid fa-arrow-right-to-bracket"></i>
                         <div class="vr d-none d-sm-inline-block"></div>
                         <span class="d-none d-sm-inline-block">Taymac Online</span>
