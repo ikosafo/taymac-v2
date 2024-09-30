@@ -121,15 +121,15 @@ include ('./config.php');
                     </div>
                     <!-- End Navbar Collapse Header -->
                     <ul class="navbar-nav">
-						<li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+						<li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#">
+                            <a class="nav-link dropdown-toggle" href="">
                                 About Us
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Who we are</a></li>
-                                <li><a class="dropdown-item" href="#">Team</a></li>
-                                <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                                <li><a class="dropdown-item" href="about">Who we are</a></li>
+                                <li><a class="dropdown-item" href="team">Team</a></li>
+                                <li><a class="dropdown-item" href="story">Our Story</a></li>
                             </ul>
                         </li>
 						<li class="nav-item dropdown">
