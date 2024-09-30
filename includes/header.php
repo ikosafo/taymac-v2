@@ -124,25 +124,25 @@ include ('./config.php');
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item <?php if ($_SERVER['REQUEST_URI'] == '/property-management') echo 'active'; ?>" href="property-management">Property Management</a></li>
                                 <li><a class="dropdown-item <?php if ($_SERVER['REQUEST_URI'] == '/health-safety') echo 'active'; ?>" href="health-safety">Health and Safety</a></li>
-                                <li><a class="dropdown-item" href="#">Taymac Farms</a></li>
+                                <li><a class="dropdown-item <?php if ($_SERVER['REQUEST_URI'] == '/taymac-farms') echo 'active'; ?>" href="taymac-farms">Taymac Farms</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle <?php if (strpos($_SERVER['REQUEST_URI'], 'services') !== false) echo 'active'; ?>" href="#">
+                            <a class="nav-link dropdown-toggle <?php if (strpos($_SERVER['REQUEST_URI'], 'risk-management') !== false || strpos($_SERVER['REQUEST_URI'], 'training') !== false || strpos($_SERVER['REQUEST_URI'], 'courses') !== false || strpos($_SERVER['REQUEST_URI'], 'first-aid') !== false || strpos($_SERVER['REQUEST_URI'], 'manual-handling') !== false || strpos($_SERVER['REQUEST_URI'], 'coshh') !== false) echo 'active'; ?>" href="#">
                                 Other Services
                             </a>
                             <ul class="dropdown-menu mega-menu">
                                 <li>
                                     <span class="row">
                                         <span class="col-6">
-                                            <a class="dropdown-item" href="#">Risk Management</a>
-                                            <a class="dropdown-item" href="#">Trainings</a>
-                                            <a class="dropdown-item" href="#">Risk Accessment Courses</a>
+                                            <a class="dropdown-item <?php if ($_SERVER['REQUEST_URI'] == '/risk-management') echo 'active'; ?>" href="risk-management">Risk Management</a>
+                                            <a class="dropdown-item <?php if ($_SERVER['REQUEST_URI'] == '/training') echo 'active'; ?>" href="training">Trainings</a>
+                                            <a class="dropdown-item <?php if ($_SERVER['REQUEST_URI'] == '/courses') echo 'active'; ?>" href="courses">Risk Assessment Courses</a>
                                         </span>
                                         <span class="col-6">
-                                            <a class="dropdown-item" href="#">First Aid</a>
-                                            <a class="dropdown-item" href="#">Manual Handling</a>
-                                            <a class="dropdown-item" href="#">COSHH</a>
+                                            <a class="dropdown-item <?php if ($_SERVER['REQUEST_URI'] == '/first-aid') echo 'active'; ?>" href="first-aid">First Aid</a>
+                                            <a class="dropdown-item <?php if ($_SERVER['REQUEST_URI'] == '/manual-handling') echo 'active'; ?>" href="manual-handling">Manual Handling</a>
+                                            <a class="dropdown-item <?php if ($_SERVER['REQUEST_URI'] == '/coshh') echo 'active'; ?>" href="coshh">COSHH</a>
                                         </span>
                                     </span>
                                 </li>
