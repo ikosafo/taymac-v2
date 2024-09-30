@@ -49,7 +49,7 @@ include ('./config.php');
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-md-4 col-lg-3 col-xl-3">
-					<a href="#" class="headerLogo">
+					<a href="/" class="headerLogo">
 						<img src="<?php echo URLROOT ?>assets/images/taymac.png" alt="" height="60">
 					</a>
 				</div>
@@ -92,7 +92,7 @@ include ('./config.php');
     <div class="navbar-wrap sticky-top no-logo">
         <div class="container-lg nav-container position-relative">
             <nav class="custom-navbar navbar navbar-expand-lg">
-                <a class="border-end navbar-brand pe-3 pe-sm-4 py-0" href="#">
+                <a class="border-end navbar-brand pe-3 pe-sm-4 py-0" href="/">
                     <img class="logo-dark" src="<?php echo URLROOT ?>assets/images/taymac.png" alt="">
                     <img class="logo-white" src="<?php echo URLROOT ?>assets/images/taymac.png" alt="">
                 </a>
@@ -118,12 +118,12 @@ include ('./config.php');
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle <?php if (strpos($_SERVER['REQUEST_URI'], 'what-we-do') !== false) echo 'active'; ?>" href="#">
+                            <a class="nav-link dropdown-toggle <?php if (strpos($_SERVER['REQUEST_URI'], 'property-management') !== false || strpos($_SERVER['REQUEST_URI'], 'health-safety') !== false || strpos($_SERVER['REQUEST_URI'], 'taymac-farms') !== false) echo 'active'; ?>" href="#">
                                 What We Do
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Property Management</a></li>
-                                <li><a class="dropdown-item" href="#">Health and Safety</a></li>
+                                <li><a class="dropdown-item <?php if ($_SERVER['REQUEST_URI'] == '/property-management') echo 'active'; ?>" href="property-management">Property Management</a></li>
+                                <li><a class="dropdown-item <?php if ($_SERVER['REQUEST_URI'] == '/health-safety') echo 'active'; ?>" href="health-safety">Health and Safety</a></li>
                                 <li><a class="dropdown-item" href="#">Taymac Farms</a></li>
                             </ul>
                         </li>

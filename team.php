@@ -9,9 +9,8 @@ include ('includes/header.php');?>
 <div class="main-content">
         <div class="border-bottom py-3">
             <div class="container">
-                <!-- Start Breadcrumbs -->
                 <div class="row gy-2 gx-4 gx-md-5">
-                    <h4 class="col-auto fs-18 fw-semibold mb-0 page-title text-capitalize">Meet Our Team</h4>
+                    <h4 class="col-auto fs-18 fw-semibold mb-0 page-title text-capitalize">About Us</h4>
                     <div class="border-start col-auto">
                         <ol class="align-items-center breadcrumb fw-medium mb-0">
                             <li class="breadcrumb-item d-flex align-items-center">
@@ -21,7 +20,6 @@ include ('includes/header.php');?>
                         </ol>
                     </div>
                 </div>
-                <!-- End Breadcrumbs -->
             </div>
         </div>
         <!-- Start Agent Content -->

@@ -9,7 +9,6 @@ include ('includes/header.php');?>
 <div class="main-content">
 		<div class="border-bottom py-3">
 			<div class="container">
-				<!-- Start Breadcrumbs -->
 				<div class="row gy-2 gx-4 gx-md-5">
 					<h4 class="col-auto fs-18 fw-semibold mb-0 page-title text-capitalize">About Us</h4>
 					<div class="border-start col-auto">
@@ -21,19 +20,14 @@ include ('includes/header.php');?>
 						</ol>
 					</div>
 				</div>
-				<!-- End Breadcrumbs -->
 			</div>
 		</div>
 		<div class="py-5">
 			<div class="container py-4">
 				<div class="row">
 					<div class="col-xl-10 mb-5">
-						<!-- Start Title -->
 						<h1 class="display-6 fw-bold">We embrace a proactive <span class="underline position-relative text-primary">CAN DO</span>  mindset, tackling challenges head-on.</h1>
-						<!-- /.End Title -->
-						<!-- Start Short Sescription -->
-						<p class="fs-17 mb-0">Our commitment to continuous improvement drives us to seek innovative solutions for both our team and our systems.</p>
-						<!-- /.End Short Sescription -->
+						<p class="fs-17 mb-0">Our commitment to continuous improvement drives us to seek innovative solutions for both our team and our systems.</p>	
 					</div>
 				</div>
 				
