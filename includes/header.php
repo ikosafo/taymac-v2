@@ -89,52 +89,37 @@ include ('./config.php');
 	</div>
 	<!-- /.End Topbar -->
 
-
-
-
-
-
-    <!-- Start Navbar -->
     <div class="navbar-wrap sticky-top no-logo">
         <div class="container-lg nav-container position-relative">
             <nav class="custom-navbar navbar navbar-expand-lg">
-                <!-- Start Navbar Brand-->
                 <a class="border-end navbar-brand pe-3 pe-sm-4 py-0" href="#">
                     <img class="logo-dark" src="<?php echo URLROOT ?>assets/images/taymac.png" alt="">
                     <img class="logo-white" src="<?php echo URLROOT ?>assets/images/taymac.png" alt="">
                 </a>
-                <!-- End Navbar Brand-->
-                <!-- Start Navbar Collapse -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Start Navbar Collapse Header -->
-                    <div class="align-items-center border-bottom d-flex d-lg-none  justify-content-between mb-3 navbar-collapse__header pb-3">
-                        <!-- Start Brand Logo For Mobile -->
+                    <div class="align-items-center border-bottom d-flex d-lg-none justify-content-between mb-3 navbar-collapse__header pb-3">
                         <div class="collapse-brand flex-shrink-0">
                             <a href="#"><img src="<?php echo URLROOT ?>assets/images/taymac.png" alt=""></a>
                         </div>
-                        <!-- End Brand Logo For Mobile -->
-                        <!-- Start Collapse Close Button -->
                         <div class="flex-grow-1 ms-3 text-end">
                             <button type="button" class="bg-transparent border-0 collapse-close p-0 position-relative"><span></span> <span></span></button>
                         </div>
-                        <!-- End Collapse Close Button -->
                     </div>
-                    <!-- End Navbar Collapse Header -->
                     <ul class="navbar-nav">
-						<li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link <?php if ($_SERVER['REQUEST_URI'] == '/') echo 'active'; ?>" href="/">Home</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="">
+                            <a class="nav-link dropdown-toggle <?php if (strpos($_SERVER['REQUEST_URI'], 'about') !== false || strpos($_SERVER['REQUEST_URI'], 'team') !== false || strpos($_SERVER['REQUEST_URI'], 'story') !== false) echo 'active'; ?>" href="#">
                                 About Us
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="about">Who we are</a></li>
-                                <li><a class="dropdown-item" href="team">Team</a></li>
-                                <li><a class="dropdown-item" href="story">Our Story</a></li>
+                                <li><a class="dropdown-item <?php if ($_SERVER['REQUEST_URI'] == '/about') echo 'active'; ?>" href="about">Who we are</a></li>
+                                <li><a class="dropdown-item <?php if ($_SERVER['REQUEST_URI'] == '/team') echo 'active'; ?>" href="team">Team</a></li>
+                                <li><a class="dropdown-item <?php if ($_SERVER['REQUEST_URI'] == '/story') echo 'active'; ?>" href="story">Our Story</a></li>
                             </ul>
                         </li>
-						<li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#">
-								What We Do
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle <?php if (strpos($_SERVER['REQUEST_URI'], 'what-we-do') !== false) echo 'active'; ?>" href="#">
+                                What We Do
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Property Management</a></li>
@@ -142,48 +127,41 @@ include ('./config.php');
                                 <li><a class="dropdown-item" href="#">Taymac Farms</a></li>
                             </ul>
                         </li>
-						<li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle <?php if (strpos($_SERVER['REQUEST_URI'], 'services') !== false) echo 'active'; ?>" href="#">
                                 Other Services
                             </a>
                             <ul class="dropdown-menu mega-menu">
                                 <li>
                                     <span class="row">
                                         <span class="col-6">
-                                            <a class="dropdown-item col-6" href="#">Risk Management</a>
-                                            <a class="dropdown-item col-6" href="#">Trainings</a>
-                                            <a class="dropdown-item col-6" href="#">Risk Accessment Courses</a>
+                                            <a class="dropdown-item" href="#">Risk Management</a>
+                                            <a class="dropdown-item" href="#">Trainings</a>
+                                            <a class="dropdown-item" href="#">Risk Accessment Courses</a>
                                         </span>
                                         <span class="col-6">
-                                            <a class="dropdown-item col-6" href="#">First Aid</a>
-                                            <a class="dropdown-item col-6" href="#">Manual Handling</a>
-                                            <a class="dropdown-item col-6" href="#">COSHH</a>
+                                            <a class="dropdown-item" href="#">First Aid</a>
+                                            <a class="dropdown-item" href="#">Manual Handling</a>
+                                            <a class="dropdown-item" href="#">COSHH</a>
                                         </span>
                                     </span>
                                 </li>
                             </ul>
                         </li>
-						<li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link <?php if ($_SERVER['REQUEST_URI'] == '/blog') echo 'active'; ?>" href="#">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link <?php if ($_SERVER['REQUEST_URI'] == '/contact') echo 'active'; ?>" href="#">Contact</a></li>
                     </ul>
                 </div>
-                <!-- /. End Navbar Collapse -->
                 <div class="d-flex gap-1 ms-lg-5">
-                  
-                    <!-- Start Login & Signup Button -->
                     <a href="#" class="btn btn-primary btn-login hstack gap-2">
                         <i class="fa-solid fa-arrow-right-to-bracket"></i>
                         <div class="vr d-none d-sm-inline-block"></div>
                         <span class="d-none d-sm-inline-block">Taymac Online</span>
                     </a>
-                    <!-- /. End Login & Signup Button -->
-                    <!-- Start Navbar Toggler Buton -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <!-- /. End Navbar Toggler Buton -->
                 </div>
             </nav>
         </div>
     </div>
-    <!-- /.End of navbar -->
