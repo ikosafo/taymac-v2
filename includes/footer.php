@@ -66,21 +66,6 @@
         </div>
     </footer>
     <!-- /.End Footer -->
-    <!-- Start Cart Empty Modal -->
-    <div class="modal fade" id="cartEmpty" tabindex="-1" aria-labelledby="cartEmptyLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="cartEmptyLabel">Your Cart</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="py-5 text-center">No items found.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /.End Cart Empty Modal -->
     <!-- Optional JavaScript -->
     <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="<?php echo URLROOT ?>assets/plugins/jquery/jquery.min.js"></script>
     <script src="<?php echo URLROOT ?>assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>

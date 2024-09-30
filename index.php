@@ -152,11 +152,14 @@ include ('includes/header.php');?>
                 
             </div>
 
-            <button type="button" class="btn btn-primary btn-lg hstack mx-auto mt-5 gap-2" data-aos="fade-up">
-                <span>Browse More Properties</span>
-                <span class="vr"></span>
-                <i class="fa-arrow-right fa-solid fs-14"></i>
-            </button>
+            <a href="property-management">
+                <button type="button" class="btn btn-primary btn-lg hstack mx-auto mt-5 gap-2" data-aos="fade-up">
+                    <span>Browse More Properties</span>
+                    <span class="vr"></span>
+                    <i class="fa-arrow-right fa-solid fs-14"></i>
+                </button>
+            </a>
+           
         </div>
     </div>
 
