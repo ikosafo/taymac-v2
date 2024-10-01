@@ -93,7 +93,7 @@ include ('includes/header.php');?>
                     <div class="border-0 card card-property rounded-3 shadow w-100 flex-fill overflow-hidden">
                         <a href="#" class="card-link"></a>
                         <div class="property-img card-image-hover overflow-hidden">
-                            <img src="<?php echo URLROOT ?>/assets/images/hero.webp" alt="" class="img-fluid">
+                            <img src="<?php echo URLROOT ?>assets/images/hero.webp" alt="" class="img-fluid">
                             <div class="bg-white card-property-badge d-inline-block end-1 fs-13 fw-semibold position-absolute property-tags px-2 py-1 rounded-3 text-dark top-1">
                                 For Rent
                             </div>
@@ -108,7 +108,7 @@ include ('includes/header.php');?>
                     <div class="border-0 card card-property rounded-3 shadow w-100 flex-fill overflow-hidden">
                         <a href="#" class="card-link"></a>
                         <div class="property-img card-image-hover overflow-hidden">
-                            <img src="<?php echo URLROOT ?>/assets/images/pr1.webp" alt="" class="img-fluid">
+                            <img src="<?php echo URLROOT ?>assets/images/pr1.webp" alt="" class="img-fluid">
                             <div class="bg-white card-property-badge d-inline-block end-1 fs-13 fw-semibold position-absolute property-tags px-2 py-1 rounded-3 text-dark top-1">
                                 For Rent
                             </div>
@@ -123,7 +123,7 @@ include ('includes/header.php');?>
                     <div class="border-0 card card-property rounded-3 shadow w-100 flex-fill overflow-hidden">
                         <a href="#" class="card-link"></a>
                         <div class="property-img card-image-hover overflow-hidden">
-                            <img src="<?php echo URLROOT ?>/assets/images/pr2.webp" alt="" class="img-fluid">
+                            <img src="<?php echo URLROOT ?>assets/images/pr2.webp" alt="" class="img-fluid">
                             <div class="bg-white card-property-badge d-inline-block end-1 fs-13 fw-semibold position-absolute property-tags px-2 py-1 rounded-3 text-dark top-1">
                                 For Rent
                             </div>
@@ -138,7 +138,7 @@ include ('includes/header.php');?>
                     <div class="border-0 card card-property rounded-3 shadow w-100 flex-fill overflow-hidden">
                         <a href="#" class="card-link"></a>
                         <div class="property-img card-image-hover overflow-hidden">
-                            <img src="<?php echo URLROOT ?>/assets/images/pr3.webp" alt="" class="img-fluid">
+                            <img src="<?php echo URLROOT ?>assets/images/pr3.webp" alt="" class="img-fluid">
                             <div class="bg-white card-property-badge d-inline-block end-1 fs-13 fw-semibold position-absolute property-tags px-2 py-1 rounded-3 text-dark top-1">
                                 For Rent
                             </div>
